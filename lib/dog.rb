@@ -64,5 +64,9 @@ class Dog
     res = DB[:conn].execute(sql, id)[0]
     dog = Dog.new(id: res[0], name: res[1], breed: res[2])
   end
+  
+  def self.find_or_create_by(hash)
+    binding.pry
+  end
 
 end
