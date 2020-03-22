@@ -57,7 +57,6 @@ class Dog
   end
   
   def self.find_by_id(id)
-    binding.pry
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ?
     SQL
