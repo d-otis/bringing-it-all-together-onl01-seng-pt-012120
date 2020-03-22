@@ -72,7 +72,7 @@ class Dog
     SQL
     dog = DB[:conn].execute(sql, name, breed)
     if !dog.empty?
-      
+    else
     end
   end
 
