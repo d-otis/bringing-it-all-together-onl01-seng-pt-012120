@@ -65,7 +65,7 @@ class Dog
     dog = Dog.new(id: res[0], name: res[1], breed: res[2])
   end
   
-  def self.find_or_create_by(hash)
+  def self.find_or_create_by(name:, breed:)
     binding.pry
   end
 
