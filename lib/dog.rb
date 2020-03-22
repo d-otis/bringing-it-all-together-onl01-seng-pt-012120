@@ -82,6 +82,7 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ?"
     binding.pry
     found_dog = DB[:conn].execute(sql, name)[0]
+    new_dog = Dog.new(id: found_dog[0], name: found_dog[1], breed: found_dog[2])
   end
 
 end
